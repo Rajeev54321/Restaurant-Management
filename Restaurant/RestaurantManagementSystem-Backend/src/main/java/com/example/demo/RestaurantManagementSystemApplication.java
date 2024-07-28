@@ -8,7 +8,7 @@ public class RestaurantManagementSystemApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(RestaurantManagementSystemApplication.class, args);
-		System.out.println("vinay");
+		System.out.println("Excuted Successfully.....");
 	}
 
 }
