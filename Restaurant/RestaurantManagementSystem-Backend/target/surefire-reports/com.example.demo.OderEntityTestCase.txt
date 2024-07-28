@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.OderEntityTestCase
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 3, Errors: 1, Skipped: 0, Time elapsed: 0.12 s <<< FAILURE! - in com.example.demo.OderEntityTestCase
+deleteOrderTest  Time elapsed: 0.031 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+oderdao.deleteById(8L);
+-> at com.example.demo.OderEntityTestCase.deleteOrderTest(OderEntityTestCase.java:93)
+Actually, there were zero interactions with this mock.
+
+	at com.example.demo.OderEntityTestCase.deleteOrderTest(OderEntityTestCase.java:93)
+
+testGetAllOrders  Time elapsed: 0.016 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+oderdao.findAll();
+-> at com.example.demo.OderEntityTestCase.testGetAllOrders(OderEntityTestCase.java:59)
+Actually, there were zero interactions with this mock.
+
+	at com.example.demo.OderEntityTestCase.testGetAllOrders(OderEntityTestCase.java:59)
+
+findOrderByIdTest  Time elapsed: 0 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+oderdao.findById(1L);
+-> at com.example.demo.OderEntityTestCase.findOrderByIdTest(OderEntityTestCase.java:84)
+Actually, there were zero interactions with this mock.
+
+	at com.example.demo.OderEntityTestCase.findOrderByIdTest(OderEntityTestCase.java:84)
+
+saveOrderTest  Time elapsed: 0.015 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.example.demo.service.CustomerService.findUserById(long)" because "this.customerservice" is null
+	at com.example.demo.OderEntityTestCase.saveOrderTest(OderEntityTestCase.java:73)
+
